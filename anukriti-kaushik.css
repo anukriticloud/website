@@ -1,0 +1,78 @@
+/* ---------------- Font ---------------- */
+@font-face {
+  font-family: "FA_FJGEDCLDMD";
+  src: url("FA_FJGEDCLDMD.ttf") format("truetype");
+}
+
+/* ---------------- Body ---------------- */
+body {
+  font-family: "FA_FJGEDCLDMD", sans-serif;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ---------------- Top Text Container ---------------- */
+#topTextContainer {
+  position: fixed;
+  top: 20px;
+  left: 20px;            /* aligns both texts left */
+  max-width: 50vw;
+  max-height: 50vh;
+  z-index: 10000;
+  overflow: hidden;
+}
+
+/* ---------------- Title Above Text ---------------- */
+#titleText {
+  font-family: "baskerville", serif;
+  font-size: 24px;        /* was 24px, now larger */
+  font-weight: ;       /* was normal, now bold */
+  color: black;         /* optional gold color */
+  margin-bottom: 30px;
+}
+
+/* ---------------- Main Top-Left Text ---------------- */
+#topText {
+  font-family: "futura", sans-serif;
+  font-size: 18px;        /* was 36px, now smaller */
+  font-weight: normal;     /* was bold, now normal */
+  color: black;
+  
+}
+
+/* ---------------- Email Text ---------------- */
+#emailText {
+  font-family: "futura", sans-serif;
+  font-size: 18px;           /* smaller than main text */
+  font-weight: normal;
+  color: blue;             /* optional cyan color for email */
+  margin-top: 2px;           /* space from main text */
+}
+
+#emailText a {
+  color: inherit;             /* inherit text color */
+  text-decoration: underline;      /* remove underline */
+}
+
+#emailText a:hover {
+  text-decoration: underline; /* underline on hover */
+}
+
+/* ---------------- Image Container ---------------- */
+#container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------- Images ---------------- */
+img {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+}
