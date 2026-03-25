@@ -58,4 +58,4 @@ function fadeOutAndRemove(img) {
 }
 
 // Start the first image after 10 seconds
-setTimeout(createRandomImage, 5000);
+setTimeout(createRandomImage, 2000);
